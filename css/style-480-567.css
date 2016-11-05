@@ -1,4 +1,4 @@
-@media only screen and (max-width: 666px) {
+@media screen and (max-width: 666px) {
     .wrapper {
 	    width: 480px;
     }

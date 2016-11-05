@@ -311,6 +311,7 @@ frameset {
 .wrapper {
     margin: 0 auto;
     width: 1366px;
+    overflow: hidden;
 }
 .header {
     background-image: url(../images/header-bg.jpg);
