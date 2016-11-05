@@ -1,0 +1,164 @@
+@media only screen and (max-width: 959px)  {
+    .wrapper {
+        width: 768px;
+    }
+    .logo {
+        margin: 29px 0 0 47px;
+    }   
+    .logo > h3 {
+        font: 27px Big John, sans-serif;
+    }
+    .header__nav {
+        margin: 39px 37px 0px 0;
+    }
+    .header__nav > li > a {
+        width: 70px;
+        height: 31px;
+        font: 15px Open Sans, sans-serif;
+    }
+    .container__about-us {
+        padding: 0 0 70px 0;
+    }
+    .container__about-us > img {
+        margin: 80px 40px 0 0;
+    }
+    .container__about-us > p {
+        width: 400px;
+        margin: 36px 0 10px 65px;
+    }
+.container__about-us > h4 {
+        margin: 86px 0 0 107px;
+    }
+    .container__about-us-details {
+        padding: 0 0 76px 0;
+    }
+    .container__about-us-details > p:first-of-type {
+        width: 500px;
+        margin: 0 80px 40px 65px;
+        display: block;
+    }
+    .container__about-us-details > p:last-of-type {
+        width: 630px;
+        margin: 0px 0px 0 65px;
+    }
+    .container__featured-projects__links > li> a {
+        line-height: 200px;
+        font-size: 16px;
+    }
+    .container__featured-projects__submit {
+        background-position: -325px 0;
+    }
+    .container__featured-projects__submit > p {
+        font-size: 14px;
+        margin: 47px 0 0 22px;
+    }
+    .container__featured-projects__submit > input {
+        height: 34px;
+        border-radius: 17px;
+        font: 15px Open Sans, sans-serif;
+        margin: 38px 30px 38px 0;
+    }
+    .container__our-services__links > li {
+        margin: 0 0 17px 100px;
+    }
+    .container__team-quotes {
+        padding: 72px 0 80px 30px;
+        background-position: -330px 0;
+        background-size: cover;
+    }
+    .container__team-quotes-img {
+        top: -18px;
+        right: 26px;
+        width: 320px;
+    }
+    .container__team-quotes h4 {
+        margin: 0 0 85px 0;
+    }
+    .container__team-quotes p {
+        max-width: 398px;
+    }
+    .container__the-portfolio {
+        padding: 0 20px 60px 20px;
+    }
+    .container__the-portfolio__galery {
+        margin: 35px 0 0px 0;
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+    .container__start-project {
+        margin: 24px 0 0 0px;
+    }
+    .container__start-project > p {
+        font: 16px Open Sans, sans-serif;
+        margin: 40px 0 0 0px;
+    }
+    .container__start-project > a {
+        margin: 28px auto 27px auto;
+    }
+    .container__the-team {
+        margin: 0 45px 151px 45px;
+    }
+    .container__the-team__slideshow-inner >ul > li > img:nth-of-type(2) {
+        margin: 43px 45px 0 0;
+        max-width: 45%;
+    }
+    .container__contact > p {
+        margin: 32px 0 0 0px;
+    }
+    .container__contact > a {
+        margin: 28px auto 27px auto;
+    }
+    .container__testimonials {
+        padding: 0 0px 69px 0px;
+    }
+    .container__testimonials__slideshow-wrap {
+        margin: 0;
+    }
+    .container__testimonials__slideshow-inner >ul > li >p {
+        font: 14px Open Sans, sans-serif;
+        line-height: 21px;
+        margin: 0 25px 0 0;
+    }
+    .container__news__description-header {
+        margin: 0 0 0 60px;
+    }
+    .container__news__slideshow-inner {
+        margin: 0px 0 0px 60px;
+    }
+    .container__news__slideshow-wrap label {
+        right: 55px;
+    }
+    .container__our-price {
+        padding: 0 0 80px 0;
+    }
+    .container__our-price__block {
+        height: 290px;
+        width: 210px;
+        margin: 0 20px 0 20px;
+    }
+    .container__subscribe-us ul {
+        padding: 0 0 80px 0;
+    }
+    .container__contact-us > ul > li {
+        margin: 0px 14px 0px 14px;
+        width: 228px;
+    }
+    .container__contact-us > ul {
+        margin: 0px 0 80px 0;
+    }
+    .container__submit-now {
+        padding: 80px 40px 80px 40px;
+    }
+    .container__submit-now .e-mail {
+        width: 212px;
+        margin-right: 22px;
+    }
+    .container__map__active span {
+        left: 62%;
+        top: 47.5%;
+    }
+    .footer {
+        padding: 69px 0 70px 0;
+    }
+}
