@@ -303,9 +303,12 @@ frameset {
 	text-align: center
 }
 @font-face {
-    font-family: 'big_johnregular';
-    src: url('big-john-webfont.woff2') format('woff2'),
-         url('big-john-webfont.woff') format('woff');
+    font-family: 'Conv_big john';
+    src: url('fonts/big john.eot');
+    src: local('☺'), 
+            url('fonts/big john.woff') format('woff'), 
+            url('fonts/big john.ttf') format('truetype'),
+            url('fonts/big john.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
