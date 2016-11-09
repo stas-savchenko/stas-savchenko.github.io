@@ -303,15 +303,17 @@ frameset {
 	text-align: center
 }
 @font-face {
-    font-family: 'Conv_big john';
-    src: url('fonts/big john.eot');
-    src: local('☺'), 
-            url('fonts/big john.woff') format('woff'), 
-            url('fonts/big john.ttf') format('truetype'),
-            url('fonts/big john.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Big John';
+  src: url('../fonts/BigJohn.eot');
+  src: url('../fonts/BigJohn.woff2') format('woff2'),
+       url('../fonts/BigJohn.woff') format('woff'),
+       url('../fonts/fonts/BigJohn.ttf') format('truetype'),
+       url('../fonts/BigJohn.svg#BigJohn') format('svg'),
+       url('../fonts/BigJohn.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
 }
+
 .wrapper {
     margin: 0 auto;
     width: 1366px;
