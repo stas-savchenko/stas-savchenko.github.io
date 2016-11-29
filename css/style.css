@@ -346,7 +346,7 @@ background-size: cover;
 max-width: 1366px;
 margin: 0 auto;
 text-align: center;
-
+padding-bottom: 77px;
 }
 .header__nav {
 	position: relative;
@@ -444,7 +444,7 @@ background-color:transparent;
 background-image:url(../images/sprite-1.png);
 background-position:-15px -7px;
 display:block;
-margin:0 auto 77px;
+margin:0 auto 0px;
 border-radius:18px
 }
 
@@ -609,7 +609,7 @@ letter-spacing:1px
 }
 
 .container__featured-projects__links {
-margin:0 auto;
+margin:-3px auto 0 auto;
 padding:0;
 list-style:none;
 overflow:hidden;
@@ -1604,7 +1604,6 @@ background-color:transparent;
 border:1px solid #81868e;
 color:#f1f2f2;
 font:14px Open Sans,sans-serif;
-width:358px;
 height:41px;
 padding:0 0 0 21px;
 margin:0 9px 0 0
@@ -1693,7 +1692,7 @@ height:53px
 }
 
 .container__submit-now .e-mail {
-width:287px;
+width:30.5%;
 margin-right:35px;
 border-color:#d8dce0;
 height:41px;
@@ -1968,17 +1967,13 @@ line-height:21px
 }
 
 .container__contact-us > ul > li {
-margin:0 15px
+margin:0 13px
 }
 
 .container__submit-now {
-padding:80px 90px 100px
+padding:80px 90px 100px 
 }
 
-.container__submit-now .e-mail {
-width:239px;
-margin-right:27px
-}
 
 .container__map__active span {
 left:59%
@@ -2020,6 +2015,10 @@ margin:2px 0 0
 }
 .container__our-services__links > li {
 margin:0 0 17px 50px
+}
+.container__submit-now .e-mail {
+width: 29.9%;
+
 }
 } 
 
@@ -2192,7 +2191,7 @@ padding:0 0 80px
 
 .container__contact-us > ul > li {
 margin:0 14px;
-width:228px
+max-width:30%;
 }
 
 .container__contact-us > ul {
@@ -2203,10 +2202,6 @@ margin:0 0 80px
 padding:80px 40px
 }
 
-.container__submit-now .e-mail {
-width:212px;
-margin-right:22px
-}
 
 .container__map__active span {
 left:62%;
@@ -2215,6 +2210,21 @@ top:47.5%
 
 .footer {
 padding:69px 0 70px
+}
+.container__submit-now .e-mail {
+width: 29.5%;
+
+}
+}
+@media screen and (max-width: 859px) {
+.container__contact-us > ul > li {
+    margin: 0 10px 20px;
+    float: none;
+    display: inline-block;
+    width: 310px;
+    padding: 5px 5px 23px;
+    vertical-align: top;
+    overflow: auto;
 }
 }
 
@@ -2815,7 +2825,7 @@ text-align:center
 margin:0 10px 20px;
 float:none;
 display:inline-block;
-width:310px;
+max-width:310px;
 padding:5px 5px 23px;
 vertical-align:top;
 overflow:auto
