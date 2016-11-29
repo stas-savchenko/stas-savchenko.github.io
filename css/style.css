@@ -2232,6 +2232,9 @@ width: 29.5%;
 .wrapper {
 max-width:767px
 }
+.header {
+  padding-bottom: 20px;
+}
 
 .logo {
 text-align:center;
