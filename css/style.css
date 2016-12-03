@@ -936,23 +936,28 @@ position:relative
 
 .container__the-portfolio__galery__hover-menu {
 z-index:1001;
-transition:all .4s ease-in-out 0s;
-display:none;
+transition:all 2.4s ease-in-out 0s;
+visibility:hidden;
+  opacity:0;
+  transition:visibility 0s linear 0.5s,opacity 0.5s linear;
 height:209px;
 position:absolute;
 top:50%;
 left:0;
 margin:-105px 0 0;
 width:270px;
-padding:0 31px 0 42px
+padding:0 31px 0 42px;
 }
 
 .container__the-portfolio__galery > li:hover .container__the-portfolio__galery__hover-menu {
-display:block
+visibility:visible;
+  opacity:1;
+  transition-delay:0s;
 }
 
 .container__the-portfolio__galery > li:hover .container__the-portfolio__galery__img {
-opacity:.18
+opacity:.18;
+    transition: linear 0.5s,opacity 0.5s linear;
 }
 
 .container__the-portfolio__galery__hover-menu > h4 {
