@@ -1137,15 +1137,15 @@ background-color:#19bd9a;
 border:1px solid #19bd9a
 }
 
-.the-team__slideshow-wrap input[type=radio]#button-1:checked~.container__the-team__slideshow-inner > ul {
+.the-team__slideshow-wrap input[type=radio]#button-1:checked~.the-team__slideshow-inner > ul {
 top:0
 }
 
-.the-team__slideshow-wrap input[type=radio]#button-2:checked~.container__the-team__slideshow-inner > ul {
+.the-team__slideshow-wrap input[type=radio]#button-2:checked~.the-team__slideshow-inner > ul {
 top:-100%
 }
 
-.the-team__slideshow-wrap input[type=radio]#button-3:checked~.container__the-team__slideshow-inner > ul {
+.the-team__slideshow-wrap input[type=radio]#button-3:checked~.the-team__slideshow-inner > ul {
 top:-200%
 }
 
@@ -1298,15 +1298,15 @@ background-color:#19bd9a;
 border:1px solid #19bd9a
 }
 
-.testimonials__slideshow-wrap input[type=radio]#button-4:checked~.container__testimonials__slideshow-inner > ul {
+.testimonials__slideshow-wrap input[type=radio]#button-4:checked~.testimonials__slideshow-inner > ul {
 top:0
 }
 
-.testimonials__slideshow-wrap input[type=radio]#button-5:checked~.container__testimonials__slideshow-inner > ul {
+.testimonials__slideshow-wrap input[type=radio]#button-5:checked~.testimonials__slideshow-inner > ul {
 top:-100%
 }
 
-.testimonials__slideshow-wrap input[type=radio]#button-6:checked~.container__testimonials__slideshow-inner > ul {
+.testimonials__slideshow-wrap input[type=radio]#button-6:checked~.testimonials__slideshow-inner > ul {
 top:-200%
 }
 
@@ -1463,15 +1463,15 @@ background-color:#b2b3b3;
 border:1px solid #b2b3b3
 }
 
-.news__slideshow-wrap input[type=radio]#button-7:checked~.container__news__slideshow-inner > ul {
+.news__slideshow-wrap input[type=radio]#button-7:checked~.news__slideshow-inner > ul {
 top:0
 }
 
-.news__slideshow-wrap input[type=radio]#button-8:checked~.container__news__slideshow-inner > ul {
+.news__slideshow-wrap input[type=radio]#button-8:checked~.news__slideshow-inner > ul {
 top:-100%
 }
 
-.news__slideshow-wrap input[type=radio]#button-9:checked~.container__news__slideshow-inner > ul {
+.news__slideshow-wrap input[type=radio]#button-9:checked~.news__slideshow-inner > ul {
 top:-200%
 }
 
