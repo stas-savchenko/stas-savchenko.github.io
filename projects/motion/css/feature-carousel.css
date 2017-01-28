@@ -44,7 +44,7 @@
 
 #carousel-left {
   position:absolute;
-  top:42.8%;
+  top:25.8%;
   left: 15.3%;
   z-index: 99;
   cursor:pointer;
@@ -63,7 +63,7 @@
 }
 #carousel-right {
   position:absolute;
-  top:42.8%;
+  top:25.8%;
   z-index: 101;
   right: 15.3%;
   cursor:pointer;
