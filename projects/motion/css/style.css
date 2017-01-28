@@ -451,6 +451,9 @@ font-style:normal
 .text__disc_header {
   letter-spacing: 0.07em;
 }
+.slider-1 {
+  position: relative;
+}
 .slider-img {
   position: absolute;
   right: 11.5%;
