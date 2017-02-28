@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<title>Дрова и топливные брикеты</title>
+<meta charset="UTF-8">
+<meta name="description" content="Описание">
+<meta name="author" content="Stas Savchenko">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Иконка сайта -->
+<link rel="shortcut icon" type="image/png" href="images/logo.png">
+<link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png">
+<!-- Стили -->
+<link href="css/font-awesome.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="libs/jquery.arcticmodal-0.3/jquery.arcticmodal-0.3.css">  
+<link rel="stylesheet" href="css/style.css">
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script>
+var map;
+var egglabs = new google.maps.LatLng(46.7490493, 33.3700448);
+var mapCoordinates = new google.maps.LatLng(46.7490493, 33.3700448);
+
+
+var markers = [];
+var image = new google.maps.MarkerImage(
+		'9lessons.png',
+		new google.maps.Size(60,80),
+		new google.maps.Point(0,0),
+		new google.maps.Point(42,74)
+	);
+
+function addMarker() 
+{
+			markers.push(new google.maps.Marker({
+			position: egglabs,
+			raiseOnDrag: false,
+		icon: image,
+			map: map,
+			draggable: false
+			}));
+			
+}
+
+function initialize() {
+	var mapOptions = {
+	backgroundColor: "#ffffff",
+		zoom: 14,
+	disableDefaultUI: false,
+		center: mapCoordinates,
+		scrollwheel: false,
+		mapTypeId: google.maps.MapTypeId.ROADMAP,
+	styles: [
+		{
+				"featureType": "all",
+				"elementType": "labels.text.fill",
+				"stylers": [
+						{
+								"color": "#ffffff"
+						}
+				]
+		},
+		{
+				"featureType": "all",
+				"elementType": "labels.text.stroke",
+				"stylers": [
+						{
+								"visibility": "off"
+						}
+				]
+		},
+		{
+				"featureType": "all",
+				"elementType": "labels.icon",
+				"stylers": [
+						{
+								"visibility": "off"
+						}
+				]
+		},
+		{
+				"featureType": "administrative",
+				"elementType": "geometry.fill",
+				"stylers": [
+						{
+								"color": "#c9323b"
+						}
+				]
+		},
+		{
+				"featureType": "administrative",
+				"elementType": "geometry.stroke",
+				"stylers": [
+						{
+								"color": "#c9323b"
+						},
+						{
+								"weight": 1.2
+						}
+				]
+		},
+		{
+				"featureType": "administrative.locality",
+				"elementType": "geometry.fill",
+				"stylers": [
+						{
+								"lightness": "-1"
+						}
+				]
+		},
+		{
+				"featureType": "administrative.neighborhood",
+				"elementType": "labels.text.fill",
+				"stylers": [
+						{
+								"lightness": "0"
+						},
+						{
+								"saturation": "0"
+						}
+				]
+		},
+		{
+				"featureType": "administrative.neighborhood",
+				"elementType": "labels.text.stroke",
+				"stylers": [
+						{
+								"weight": "0.01"
+						}
+				]
+		},
+		{
+				"featureType": "administrative.land_parcel",
+				"elementType": "labels.text.stroke",
+				"stylers": [
+						{
+								"weight": "0.01"
+						}
+				]
+		},
+		{
+				"featureType": "landscape",
+				"elementType": "geometry",
+				"stylers": [
+						{
+								"color": "#c9323b"
+						}
+				]
+		},
+		{
+				"featureType": "poi",
+				"elementType": "geometry",
+				"stylers": [
+						{
+								"color": "#99282f"
+						}
+				]
+		},
+		{
+				"featureType": "road",
+				"elementType": "geometry.stroke",
+				"stylers": [
+						{
+								"visibility": "off"
+						}
+				]
+		},
+		{
+				"featureType": "road.highway",
+				"elementType": "geometry.fill",
+				"stylers": [
+						{
+								"color": "#99282f"
+						}
+				]
+		},
+		{
+				"featureType": "road.highway.controlled_access",
+				"elementType": "geometry.stroke",
+				"stylers": [
+						{
+								"color": "#99282f"
+						}
+				]
+		},
+		{
+				"featureType": "road.arterial",
+				"elementType": "geometry",
+				"stylers": [
+						{
+								"color": "#99282f"
+						}
+				]
+		},
+		{
+				"featureType": "road.local",
+				"elementType": "geometry",
+				"stylers": [
+						{
+								"color": "#99282f"
+						}
+				]
+		},
+		{
+				"featureType": "transit",
+				"elementType": "geometry",
+				"stylers": [
+						{
+								"color": "#99282f"
+						}
+				]
+		},
+		{
+				"featureType": "water",
+				"elementType": "geometry",
+				"stylers": [
+						{
+								"color": "#1C1C1C"
+						}
+				]
+		}
+]
+		
+	};
+map = new google.maps.Map(document.getElementById('map-canvas'),mapOptions);
+addMarker();
+ 
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+</head>
+
+<body>
+	<!-- Начало кода --> 
+	<div class="wrapper">
+		<!-- Начало Header -->
+		<header id="header" class="cf">
+			<div class="header__nav container">
+				<div class="row">
+					<div class="logo header-logo">
+						<a href="javascript:void(0);">
+							<img src="images/logo.png" alt="logo" class="logo__img">
+						</a>
+					</div>
+					<a href="javascript:void(0);" id="responsive-menu"><i class="fa fa-list"></i></a>
+					<div class="contacts contacts_header">
+						<a href="tel:+380997998314">0997998314</a>
+						<a href="tel:+380679625767">0679625767</a>
+					</dl>
+					<ul id="menu" class="nav__header">
+							<li class="nav__item"><a class="nav__link first-item" href="#home">Home</a></li>
+							<li class="nav__item"><a class="nav__link" href="#main">About</a></li>
+							<li class="nav__item"><a class="nav__link" href="#team">Team</a></li>
+							<li class="nav__item"><a class="nav__link" href="#portfolio">Portfolio</a></li>
+							<li class="nav__item"><a class="nav__link" href="#other">Other</a></li>
+							<li class="nav__item"><a class="nav__link" href="#footer">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!-- Конец Header -->
+		<!-- Начало Main -->
+		<div id="main">
+			<section>
+				<div class="container section-1">
+					<div class="prem-brd-block">
+						<h1 class="Uni-Sans-Heavy">Продажа, доставка дров и твердотопливных брикетов в Новой Каховке и Херсонской области</h1>
+					</div>
+					<p>Начните экономить на отоплении с нами</p>
+					<i class="fa fa-angle-double-down"></i>
+				</div>		
+			</section>
+			<section class="section-2 padding50">
+				<div class="container">
+					<h2 class="zag-h2 Uni-Sans-Heavy">Что вы получаете, </br> обратившись к нам:</h2>
+					<ul class="item-list">
+						<li class="item"><p class="item-desc">1. Большой ассортимент отопительной продукции в одном месте</p></li>
+						<li class="item"><p class="item-desc">2. Доставка нашим транспортом по всей области</p></li>
+						<li class="item"><p class="item-desc">3. Больной ассортимент отопительной продукции в одном месте</p></li>
+						<li class="item"><p class="item-desc">4. Больной ассортимент отопительной продукции в одном месте</p></li>
+					</ul>    
+				</div>
+			</section>
+			<section class="padding50 section-3">
+				<div class="container">
+					<h2 class="zag-h2 Uni-Sans-Heavy">Ассортимент дров:</h2>
+					<a href="javascript:void(0);">
+						<div class="box">
+							<img class="box__img" src="images/DSCN4569_660x880.JPG" alt="img">
+							<h4 class="Uni-Sans-Heavy">Дрова колотые</h4>
+							<p>Объем: 1,5 скл./м</p>
+							<p class="price">Цена: 1500 грн</p>
+						</div>
+					</a>
+					<a href="javascript:void(0);">
+						<div class="box">
+							<img class="box__img" src="images/DSCN4586_660x880.JPG" alt="img">
+							<h4 class="Uni-Sans-Heavy">Дрова колотые</h4>
+							<p>Объем: 1 скл./м</p>
+							<p class="price">Цена: 1050 грн</p>
+						</div>
+					</a>
+					<a href="javascript:void(0);">
+						<div class="box">
+							<img class="box__img" src="images/DSCN4581_660x880.JPG" alt="img">
+							<h4 class="Uni-Sans-Heavy">Дрова колотые</h4>
+							<p>Объем: 0,05 скл./м</p>
+							<p class="price">Цена: 70 грн</p>
+						</div>
+					</a>
+				</div>
+			</section>
+			<section class="padding50 section-4">
+				<div class="container">
+					<h2 class="zag-h2 Uni-Sans-Heavy">При заказе ящика дров мешок в подарок!</h2>
+					<button class="btn btn-lg" type="button">ЗАКАЗАТЬ СЕЙЧАС</button>
+				</div>
+			</section>
+			<section class="padding50 section-3">
+				<div class="container">
+					<h2 class="zag-h2 Uni-Sans-Heavy">Ассортимент топливных брикетов:</h2>
+					<a href="javascript:void(0);">
+						<div class="box">
+							<img class="box__img" src="images/DSCN4604_660x880.JPG" alt="img">
+							<h4 class="Uni-Sans-Heavy">Брикеты "brand"</h4>
+							<p>1 тонна</p>
+							<p class="price">Цена: 2800 грн</p>
+						</div>
+					</a>
+					<a href="javascript:void(0);">
+						<div class="box">
+							<img class="box__img" src="images/DSCN4611_660x880.JPG" alt="img">
+							<h4 class="Uni-Sans-Heavy">Брикеты "brand"</h4>
+							<p>1 тонна</p>
+							<p class="price">Цена: 2800 грн</p>
+						</div>
+					</a>
+					<a href="javascript:void(0);">
+						<div class="box">
+							<img class="box__img" src="images/DSCN4615_660x880.JPG" alt="img">
+							<h4 class="Uni-Sans-Heavy">Брикеты "brand"</h4>
+							<p>1 тонна</p>
+							<p class="price">Цена: 2800 грн</p>
+						</div>
+					</a>
+					<a href="javascript:void(0);">
+						<div class="box">
+							<img class="box__img" src="images/DSCN4617_660x880.JPG" alt="img">
+							<h4 class="Uni-Sans-Heavy">Брикеты "brand"</h4>
+							<p>1 тонна</p>
+							<p class="price">Цена: 2800 грн</p>
+						</div>
+					</a>
+				</div>
+			</section>
+			<section class="padding50">
+				<form class="form-inline" action="" id="form">
+					<input class="form-control form-group zapis-margin" name="email" placeholder="Email" data-validation="email" data-validation-error-msg="Введит е верный Email!">
+					<input class="form-control form-group zapis-margin" name="name" placeholder="Имя" data-validation="length" data-validation-length="min2" data-validation-error-msg="Слишком короткое имя! Нужно от 2-х символов!">
+					<input class="form-control form-group zapis-margin" name="phone" placeholder="Телефон" data-validation="number" data-validation-error-msg="Допустимы только цифры!">
+					<input class="btn" type="button" value="Отправить сообщение">
+				</form>
+				<div class='result'>
+					<input type="text">
+					<input type="text">
+				</div>
+			</section>
+			<div id="map-canvas"></div>
+			</section>
+		</div>
+		<!-- Конец Main -->
+
+		<footer>
+			<dl class="contacts">
+				<dt><img src="images/Vodafone_logo2.png" alt="img"></dt>
+				<dd><a href="tel:+380679625767">0679625767</a></dd>
+				<dt><img src="images/kyivstar_logo2.png" alt="img"></dt>
+				<dd><a href="tel:+380679625767">0679625767</a></dd>
+				<dt>Email:</dt>
+				<dd><a href="mailto:its-info@itsacademic.ca">its-info@itsacademic.ca</a></dd>
+			</dl>
+		</footer>
+		<span class="m-dotted" id="#example1" onclick="$('#exampleModal1').arcticmodal()">Простое модальное окно</span>
+			<div class="g-hidden">
+				<div class="box-modal" id="exampleModal1">
+					<div class="box-modal_close arcticmodal-close">закрыть</div>
+					Пример простого модального окна
+				</div>
+			</div>
+	</div>
+
+	<!-- Конец кода -->
+<!-- Подключаем скрипты -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+	window.JQuery || document.write('<script src="libs/jquery/jquery-3.1.1.min.js"><\/script>');
+</script>
+<script src="libs/jquery_form_validator/jquery.form-validator.min.js"></script>
+<script src="libs/jquery.arcticmodal-0.3/jquery.arcticmodal-0.3.min.js"></script>
+<script src="js/js.js"></script>
+<script src="js/script_form.js"></script>
+</body>
+</html>
