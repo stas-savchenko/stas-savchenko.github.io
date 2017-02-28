@@ -1053,9 +1053,9 @@ frameset {
 .contacts > a {
   color: #bc123f;
   text-decoration: none;
-  font-size: 22px;
+  font-size: 21px;
   display: block;
-  padding: 3px 0 3px 40px;
+  padding: 1px 0 1px 40px;
 }
 .contacts > a:hover {
   color: #fff;
