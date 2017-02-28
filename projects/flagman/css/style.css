@@ -1214,7 +1214,7 @@ h2 {
   color: #fff;
 }
 .box {
-  width: 22%;
+  width: 22.6%;
   vertical-align: top;
   height: auto;
   display: inline-block;
@@ -1256,9 +1256,9 @@ h2 {
   padding: 10px;
 }
 .box:hover .box__img {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.12);
+  -ms-transform: scale(1.12);
+  transform: scale(1.12);
 }
 .section-3 .zag-h2 {
   text-transform: uppercase;
@@ -1281,9 +1281,10 @@ h2 {
   text-decoration: none;
 }
 .section-4 {
+  text-align: center;
   position: relative;
   z-index: 2;
-  background-color: #948787;
+  background-color: #000;
 }
 .section-4 h2 {
   color: #fff;
@@ -1299,11 +1300,36 @@ h2 {
     width: 100%;
     height: 100%;
     z-index: -1;
-    opacity: 0.5;
-    background: url(../images/background-84678.jpg) 100% 0%, no-repeat;
+    opacity: 0.6;
+    background: url(../images/form_drova_bg.jpg) 100% 0%, no-repeat;
     background-attachment:fixed;
     background-size: cover;
     background-size: cover;
+}
+.form-control {
+    display: block;
+    width: 300px;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.form-inline .form-group {
+    display: inline-block;
+    padding-left: 30px;
+    margin-bottom: 0;
+    vertical-align: middle;
+    background-color: transparent;
 }
 .btn {
   font-family: 'pt_sansregular';
